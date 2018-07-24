@@ -2,10 +2,10 @@
 I've found a much better option here: https://github.com/Entware-ng/Entware-ng/wiki/Install-on-Synology-NAS
 
 # Installation of Optware IPKG
-Synology DS216j IPKG installation
+Synology DS216j IPKG installation. Also works on DS216se.
 
 # Introduction
-The CPU of DS 216 j is "Marvell Armada 385 88 F 6820", although there is no optware-bootstrap for Marvell Armada, it seems that Marvell Kirkwood's optware-bootstrap can be diverted as it is compatible.
+The CPU of DS 216 j is "Marvell Armada 385 88 F 6820" (and cpu for DS216se is Marvell Armada-370), although there is no optware-bootstrap for Marvell Armada, it seems that Marvell Kirkwood's optware-bootstrap can be diverted as it is compatible.
 
 ## Note on compatibility
 It appear that binaries aren't that much/all compatible. The reason must be that the cs08q1armel toolchain doesn't have updated materials. If you encounter issues you should consider setup a chroot environment instead.[*](https://github.com/trepmag/ds213j-optware-bootstrap)
